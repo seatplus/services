@@ -1,0 +1,40 @@
+{
+  "name": "seatplus/services",
+  "description": "Business logic layer for seatplus",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Felix Huber",
+      "email": "felix.a.huber@gmx.net"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Seatplus\\Services\\": "src/"
+    },
+    "files": [
+      "src/Helpers/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Seatplus\\Services\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "alpha",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7.1",
+    "laravel/framework": "5.8.*"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Seatplus\\Web\\ServicesServiceProvider "
+      ]
+    }
+  },
+  "require-dev": {
+    "orchestra/testbench": "^3.8"
+  }
+}
